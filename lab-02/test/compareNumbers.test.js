@@ -31,6 +31,6 @@ test('test numbers are higher', assert => {
 });
 
 test('test valid input', assert => {
-  const userGuess = 'potato';
-  assert.throws(compareNumbers(userGuess, 9));
+  // const userGuess = 'potato';
+  assert.throws(compareNumbers, Error);
 });
