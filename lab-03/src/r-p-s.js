@@ -16,17 +16,20 @@ button.addEventListener('click', () => {
   const userChoice = userInput.value;
   const computerChoice = getRandomThrow();
   const result = checkResult(userChoice, computerChoice);
+  console.log('user', userChoice);
+  console.log('computer', computerChoice);
+  console.log(result);
 
   if(computerChoice === 'rock') resultImage.src="https://www.wickedhorror.com/wp-content/uploads/2019/08/The-Rock-864x467.jpg";
   if(computerChoice === 'scissors') resultImage.src="https://www.wweek.com/resizer/86tt-U3ytIrtb7bBYXAIg7XWz7A=/1200x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/wweek/wp-content/uploads/2019/08/30145212/Nicolas-Cage.jpg";
-  if(computerChoice === 'paper') resultImage.src="https://www.wickedhorror.com/wp-content/uploads/2019/08/The-Rock-864x467.jpg"
+  if(computerChoice === 'paper') resultImage.src="https://cdn.britannica.com/97/194197-050-5BD88874/Vin-Diesel-The-Fast-and-the-Furious.jpg"
   
   if(result === 'win') {
     wins++;
     winsDisplay.textContent = wins;
     resultDisplay.classList.remove('hidden');
     resultDisplay.textContent = 'You win!';
-  } else if(result === 'loss') {
+  } else if(result === 'lose') {
     losses++;
     lossesDisplay.textContent = losses;
     resultDisplay.classList.remove('hidden');

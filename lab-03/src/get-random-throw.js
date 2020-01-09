@@ -4,9 +4,9 @@ function getRandomThrow() {
 }
 
 function getThrowFromNumber(number) {
-  if(number === 0) 'rock';
-  if(number === 1) 'paper';
-  if(number === 2) 'scissors';
+  if(number === 0) return 'rock';
+  if(number === 1) return 'paper';
+  if(number === 2) return 'scissors';
 }
 
 function checkResult(player, computer) {
