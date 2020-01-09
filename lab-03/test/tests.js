@@ -1,2 +1,1 @@
-import './is-yes.test.js';
-import './compareNumbers.test.js';
+import './get-random-throw.test.js';
