@@ -1,5 +1,5 @@
 const amethyst = {
-  code: 'amethyst',
+  id: 'amethyst',
   name: 'Amethyst',
   image: 'assets/amethyst.jpg',
   description: 'purple and amazing',
@@ -8,7 +8,7 @@ const amethyst = {
   cost: 3.00
 };
 const labradorite = {
-  code: 'labradorite',
+  id: 'labradorite',
   name: 'Labradorite',
   image: 'assets/labradorite.jpg',
   description: 'shiny and bluish',
@@ -17,7 +17,7 @@ const labradorite = {
   cost: 5.00
 };
 const lapisLazuli = {
-  code: 'lapisLazuli',
+  id: 'lapisLazuli',
   name: 'Lapis Lazuli',
   image: 'assets/lapis-lazuli.jpg',
   description: 'dark blue',
@@ -26,7 +26,7 @@ const lapisLazuli = {
   cost: 4.00
 };
 const malachite = {
-  code: 'malachite',
+  id: 'malachite',
   name: 'Malachite',
   image: 'assets/malachite.jpg',
   description: 'green and shiny',
@@ -35,7 +35,7 @@ const malachite = {
   cost: 5.00
 };
 const quartz = {
-  code: 'quartz',
+  id: 'quartz',
   name: 'Clear quartz',
   image: 'assets/quartz.jpg',
   description: 'clear',
@@ -44,7 +44,7 @@ const quartz = {
   cost: 2.00
 };
 const roseQuartz = {
-  code: 'roseQuartz',
+  id: 'roseQuartz',
   name: 'Rose quartz',
   image: 'assets/rose-quartz.jpg',
   description: 'pink',
@@ -53,7 +53,7 @@ const roseQuartz = {
   cost: 2.00
 };
 const smokyQuartz = {
-  code: 'smokyQuartz',
+  id: 'smokyQuartz',
   name: 'Smoky quartz',
   image: 'assets/smoky-quartz.jpg',
   description: 'grayish black',

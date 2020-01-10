@@ -1,4 +1,5 @@
 import crystals from '../data/crystals.js';
+import toUSD from '../src/format.js';
 
 function renderCrystals(crystal) {
 
@@ -18,16 +19,20 @@ function renderCrystals(crystal) {
   li.appendChild(img);
 
   const h4 = document.createElement('h4');
-  h4.textContent = crystal.price;
+  h4.textContent = crystal.description;
   li.appendChild(h4);
-
+  
   const p = document.createElement('p');
-  p.textContent = crystal.description;
+  p.textContent = toUSD(crystal.price);
+  p.id = 'price';
   li.appendChild(p);
 
   const button = document.createElement('button');
+  button.textContent = 'Add';
+  button.value = crystal.id;
   li.appendChild(button);
 
+  return li;
 }
 
 export default renderCrystals;
