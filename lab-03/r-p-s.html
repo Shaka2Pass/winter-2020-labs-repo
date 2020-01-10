@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>R-P-S</title>
+</head>
+<body>
+  <header>
+    <h1>Rock, Paper, Scissors</h1>
+  </header>
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sed minus autem sint earum? Quis temporibus magnam tenetur, quam ab pariatur. Cum velit, impedit nulla omnis aperiam voluptate cupiditate blanditiis?</p>
+    <ul>
+      <li>r beats s</li>
+      <li>s beats p</li>
+      <li>p beats r </li>
+    </ul>
+    <label>
+      <input type="radio" name="player-choice" value="rock" checked>
+      <img src="https://www.wickedhorror.com/wp-content/uploads/2019/08/The-Rock-864x467.jpg" alt="The Rock">
+    </label>
+    <label>
+      <input type="radio" name="player-choice" value="paper">
+      <img src="https://cdn.britannica.com/97/194197-050-5BD88874/Vin-Diesel-The-Fast-and-the-Furious.jpg" alt="Paper">
+    </label>
+    <label>
+      <input type="radio" name="player-choice" value="scissors">
+      <img src="https://www.wweek.com/resizer/86tt-U3ytIrtb7bBYXAIg7XWz7A=/1200x0/filters:quality(100)/s3.amazonaws.com/arc-wordpress-client-uploads/wweek/wp-content/uploads/2019/08/30145212/Nicolas-Cage.jpg" alt="Scissors">
+    </label>
+    <button id='submit-button'>Shoot!</button>
+    <section>
+      <img src="https://www.wickedhorror.com/wp-content/uploads/2019/08/The-Rock-864x467.jpg" class="hidden" alt="" id="result-image">
+      <p id="result-display"></p>
+      <p id="result-tally">Wins: <span id='wins'>0</span> Losses: <span id='losses'>0</span> Draws: <span id='draws'>0</span></p>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="./src/r-p-s.js" type="module"></script>
+</body>
+</html>
