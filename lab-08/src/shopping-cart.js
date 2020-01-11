@@ -1,4 +1,3 @@
-import cart from '../data/cartData.js';
 import crystals from '../data/crystals.js';
 import renderLineItem from './render-line-item.js';
 import { findById, calcOrderTotal } from '../common/utils.js';
@@ -8,12 +7,12 @@ const root = document.getElementById('root');
 const total = document.getElementById('total');
 const placeOrderButton = document.getElementById('place-order-button');
 
-const json = localstorage.getItem('CART');
-let shoppingCart;
+const json = localStorage.getItem('CART');
+let cart;
 if(json){
-  shoppingCart = JSON.parse(json);
+  cart = JSON.parse(json);
 } else {
-  shoppingCart = [];
+  cart = [];
 }
 
 for(let i = 0; i < cart.length; i++) {
@@ -27,8 +26,8 @@ if(cart.length === 0){
   placeOrderButton.disabled = true;
 } else {
   placeOrderButton.addEventListener('click', () => {
-    localstorage.removeItem('CART');
-    alert('order place:\n' + JSON.stringify(cart, true, 2));
+    localStorage.removeItem('CART');
+    alert('order placed:\n' + JSON.stringify(cart, true, 2));
     window.location = '../';
   });
 }
