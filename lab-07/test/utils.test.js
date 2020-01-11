@@ -1,6 +1,6 @@
-import { findById, calcLineItem } from '../common/utils.js'
-
-import crystals from '../data/crystals.js'
+import { findById, calcLineItem, calcOrderTotal } from '../common/utils.js';
+import cart from '../data/cartData.js';
+import crystals from '../data/crystals.js';
 
 const test = QUnit.test;
 
@@ -52,6 +52,15 @@ test('it multiplies decimals', assert => {
   const expected = 26.25;
 
   const result = calcLineItem(price, quantity);
+
+  assert.equal(expected, result);
+})
+
+test('it calculates order total', assert => {
+
+  const expected = '$26.00'
+
+  const result = calcOrderTotal(cart, crystals);
 
   assert.equal(expected, result);
 })
