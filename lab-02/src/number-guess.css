@@ -1,3 +1,35 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+}
+
 .hidden {
   display: none;
+}
+
+button {
+  width: 200px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+input {
+  border: none;
+	border-bottom: 0.125rem solid pink;
+	height: 2rem;
+	font-size: 1.0625rem;
+	padding-left: 0.875rem;
+	line-height: 147.6%;
+	padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+  margin-right: 50px;
+}
+
+p {
+  font-family: arial;
 }
